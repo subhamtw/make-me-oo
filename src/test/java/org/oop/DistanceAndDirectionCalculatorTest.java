@@ -10,7 +10,7 @@ public class DistanceAndDirectionCalculatorTest {
     @Test
     void twoPointsWithSameXAndYCoordinatesShouldHaveADistanceOfZero() {
         Point origin = new Point(0, 0);
-        Assertions.assertEquals(0, DistanceAndDirectionCalculator.distance(origin, origin));
+        Assertions.assertEquals(0, origin.direction(origin));
     }
 
     @Test
@@ -28,7 +28,7 @@ public class DistanceAndDirectionCalculatorTest {
         Point point1 = new Point(1, 0);
         Point point2 = new Point(-1, 0);
 
-        Assertions.assertEquals(2,point1.distance(point2));
+        Assertions.assertEquals(2, point1.distance(point2));
     }
 
     @Test
@@ -37,8 +37,8 @@ public class DistanceAndDirectionCalculatorTest {
         Point point1 = new Point(1, 0);
         Point point2 = new Point(3, 0);
 
-        Assertions.assertEquals(0, direction(origin, point1));
-        Assertions.assertEquals(0, direction(origin, point2));
+        Assertions.assertEquals(0, origin.direction(point1));
+        Assertions.assertEquals(0, origin.direction(point2));
     }
 
     @Test
@@ -47,8 +47,8 @@ public class DistanceAndDirectionCalculatorTest {
         Point point1 = new Point(-1, 0);
         Point point2 = new Point(-3, 0);
 
-        Assertions.assertEquals(Math.PI, direction(origin, point1));
-        Assertions.assertEquals(Math.PI, direction(origin, point2));
+        Assertions.assertEquals(Math.PI, origin.direction(point1));
+        Assertions.assertEquals(Math.PI, origin.direction(point2));
     }
 
     @Test
@@ -57,7 +57,7 @@ public class DistanceAndDirectionCalculatorTest {
         Point point1 = new Point(0, 1);
         Point point2 = new Point(0, 3);
 
-        Assertions.assertEquals(Math.PI / 2, direction(origin, point2));
-        Assertions.assertEquals(Math.PI / 2, direction(origin, point1));
+        Assertions.assertEquals(Math.PI / 2, origin.direction(point2));
+        Assertions.assertEquals(Math.PI / 2, origin.direction(point1));
     }
 }

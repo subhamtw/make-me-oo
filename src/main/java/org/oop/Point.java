@@ -30,4 +30,10 @@ public class Point {
         double yDistance = this.y - to.getY();
         return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2));
     }
+
+    public double direction(Point to) {
+        double xDistance = to.getX() - this.x;
+        double yDistance = to.getY() - this.y;
+        return Math.atan2(yDistance, xDistance);
+    }
 }
