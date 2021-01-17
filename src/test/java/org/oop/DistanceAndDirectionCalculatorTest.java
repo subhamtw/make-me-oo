@@ -3,8 +3,6 @@ package org.oop;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.oop.DistanceAndDirectionCalculator.direction;
-
 public class DistanceAndDirectionCalculatorTest {
 
     @Test
