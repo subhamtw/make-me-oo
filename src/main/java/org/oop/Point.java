@@ -24,4 +24,10 @@ public class Point {
         this.x = x;
         this.y = y;
     }
+
+    public double distance(Point to) {
+        double xDistance = this.x - to.getX();
+        double yDistance = this.y - to.getY();
+        return Math.sqrt(Math.pow(xDistance, 2) + Math.pow(yDistance, 2));
+    }
 }
