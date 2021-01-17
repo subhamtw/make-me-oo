@@ -27,8 +27,8 @@ However, his trainer told him that what he did is not Object Oriented programmin
 - Try to articulate problems with Shivam's OOP solution. (Write it somewhere and share it with your trainer)
 - Fork the project and fix the design related problem with Shivam's OOP solution. Share that with your trainer too.
 
-Problems with Shivam's Code -
-1.Encapsulation was broken as use of static functions 
-2.The Point Object Should only se associated with the Distance And Direction Functions
-3.Unwanted use of Getters and Setters Could Make Many vulnerabilities 
-4.Test are not in AAA format
+Problems with Shivam's Code - 
+- Encapsulation was broken as use of static functions 
+- The Point Object Should only se associated with the Distance And Direction Functions
+- Unwanted use of Getters and Setters Could Make Many vulnerabilities 
+- Test are not in AAA format
